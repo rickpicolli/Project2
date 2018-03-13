@@ -16,6 +16,12 @@ var PORT = process.env.PORT || 5000;
 
 var db   = require("./models");
 
+app.get("/", function(req, res) {
+    res.json({
+        "hello":"world"
+    })
+})
+
 app.listen(PORT);
 
 /*
