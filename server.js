@@ -16,16 +16,6 @@ var PORT = process.env.PORT || 5000;
 
 var db   = require("./models");
 
-app.get("/", function(req, res) {
-    res.json({
-        "hello":"world"
-    })
-})
-
-app.listen(PORT);
-
-/*
-
 app.use(bodyParser.urlencoded({
     extended: false
 }));
@@ -78,5 +68,3 @@ db.sequelize.sync().then(function(){
 		console.log("App listening on PORT" + PORT);
 	});
 });
-
-*/
