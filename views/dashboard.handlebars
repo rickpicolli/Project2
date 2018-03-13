@@ -1,0 +1,40 @@
+<div align="center">
+	<header>
+      <h1>HI {{name}}, WHAT DO YOU WANT TO DO TODAY?</h1>
+      <h3><a class="catBtn btn btn-primary" id="logout" href="/logout">LOGOUT</a></h3>
+  </header>
+  <div class="container">
+  	<div class="row">
+  		<div class="col-md-4">
+  			<img class="img-responsive" src="https://media.giphy.com/media/13Nc3xlO1kGg3S/giphy.gif" alt="Avatar" id="youtube">
+  		</div>
+  		<div class="col-md-4">
+  			<img class="img-responsive" src="https://cdn.dribbble.com/users/441326/screenshots/3165191/spotify-gif---oliver-keane.gif" alt="Avatar" id="spotify">
+  		</div>
+  		<div class="col-md-4">
+  			<img class="img-responsive" src="http://78.media.tumblr.com/365c6cd618ea9a55b9639de4c969e85b/tumblr_ngsjr97fWj1s5e5bko1_500.gif" alt="Avatar" id="gif">
+  		</div>
+  	</div>
+	  <div>
+		{{#each categories}}
+			<button class="catBtn btn btn-primary" id="choices" data-category="{{category}}">{{name}}</button>
+		{{/each}}
+		<a href = "/api/favSong"><button class="btn btn-primary" id="favBtn" data-category="saves">favorites</button></a>
+	</div>
+	<div class="search-wrap hide">
+      <form id="searchForm">
+          <input type="text" id="search" placeholder="Type something..." autocomplete="off" class="form-control" />
+          <input type="submit" value="search" class="form-control btn btn-primary w100" id="submit">
+      </form>
+  </div>
+  <div id="results"></div>
+  </div>
+</div>
+
+
+
+<script>
+	// var cookie = document.cookie.split("; ");
+	// var userName = cookie[0].split("=");
+	// $("#name").text(userName[1]);
+</script>

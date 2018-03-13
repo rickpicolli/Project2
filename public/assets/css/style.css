@@ -1,0 +1,132 @@
+body {
+	background-color: purple;
+	font-family:Impact, Charcoal, sans-serif;
+	color:black;
+	background-image: url(../images/berries.png);
+}
+
+.jumbotron {
+	text-align: center;
+	background-color: purple;
+}
+
+#icons {
+	text-align: center;
+}
+
+#choices {
+	background-color: gray;
+	margin-bottom:10px;
+	margin-top:10px;
+	padding:30px;
+	color:black;
+	font-size: 30px;
+	border-radius:30%;
+}
+
+#favBtn {
+	background-color: black;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:30px;
+	font-size:30px;
+	border-radius:30%;
+}
+
+#submit {
+	margin-top:10px;
+	background-color: black;
+	border-color: black;
+	height:70px;
+	font-size:40px;
+}
+
+.nextBtn {
+	background-color: gray;
+	margin-right:10px;
+	padding:15px;
+	border-radius:30%;
+	font-size:30px;
+}
+
+.clearBtn {
+	background-color: gray;
+	margin-right:10px;
+	padding:15px;
+	border-radius:30%;
+	font-size:30px;
+}
+
+.saveBtn {
+	background-color: black;
+	margin-right:10px;
+	padding:15px;
+	border-radius:30%;
+	font-size:30px;
+}
+
+#gif {
+	height:200px;
+	width:300px;
+	border-radius:30%;
+
+}
+
+#spotify {
+	border-radius:30%;
+	height:200px;
+	width:300px;
+}
+
+#youtube {
+	border-radius:30%;
+	height:200px;
+	width:300px;
+}
+
+#gudetama {
+	border-radius:30%;
+	width:300px;
+}
+
+#booze {
+	border-radius:30%;
+	width:300px;
+	height:300px;
+}
+
+#music {
+	border-radius:30%;
+	width:300px;
+	height:300px;
+}
+
+#login {
+	background-color: teal;
+	border-color: teal;
+	color:white;
+}
+
+#signup {
+	background-color: teal;
+	border-color: teal;
+	color:white;
+	padding:20px;
+	border-radius: 30%;
+}
+
+#signupForm {
+	color:#FFDEAD;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#logout {
+	padding:20px;
+	border-radius:30%;
+	font-size:20px;
+}
+
+#search {
+	padding:30px;
+	font-size:30px;
+}

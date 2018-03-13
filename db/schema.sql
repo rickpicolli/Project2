@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS bums_db;
+CREATE DATABASE bums_db;

@@ -1,0 +1,19 @@
+<div align="center">
+    <header>
+     <h1>Hi {{name}}, you can see below your favorites things!</h1>
+     <a href="/logout" class="catBtn btn btn-primary" id="logout">LOGOUT</a>
+ </header>
+ <div class="container">
+      <div>
+        {{#each myFavoriteSongs}}
+        <div class="currentSong" data-song="{{songID}}">
+        
+        	<iframe src="https://open.spotify.com/embed?uri=spotify:track:{{songID}}" height="380" width="300" frameborder="0" allowtransparency="true"></iframe>
+        </div>
+        {{/each}}
+    </div>
+   
+    
+ <div id="favs"></div>
+ </div>
+</div>

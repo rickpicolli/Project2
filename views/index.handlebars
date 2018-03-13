@@ -1,0 +1,79 @@
+<div class="container">
+<div class="row">
+<form class="navbar-form navbar-left" role="search" id="signinForm" action="/login" method="post"><h4>EXISTING ACCOUNT? LOGIN HERE</h4>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Email" name="email" id="email">
+    <input type="password" class="form-control" placeholder="Password" name="password">
+  </div>
+  <button type="submit" class="btn btn-default" id="login">Sign In</button>
+</form>
+</div>
+
+<div class="jumbotron">
+  <h1>FEEL LIKE A B.U.M?</h1>
+  <p>SIGN UP WITH US TODAY!!!</p>
+</div>
+
+<div class="row">
+    <h1>NEW ACCOUNTS</h1>
+<form id="signupForm" action="/signup" method="post">
+        <label for="email"><h4>Email Address:</h4></label>
+        <input type="text" class="form-control" placeholder="Email" id="newEmail" name="email">
+        <label for="name"><h4>Name:</h4></label>
+        <input type="text" class="form-control" placeholder="Username" id="newName" name="name">
+        <label for="password"><h4>Password:</h4></label>
+        <input type="text" class="form-control" placeholder="Password" id="newPWd" name="password">
+        <br>
+        <input id="signup" class="btn sbt" type="submit" value="Sign Up" />
+</form>
+</div>
+
+<div class="row" id="icons">
+            <div class="col-md-4">
+                <h1>FEELING LAZY?</h1>
+                <img class="img-responsive" src="https://78.media.tumblr.com/4474c38e70283c6ddee7012673df8e99/tumblr_ol3f997jSL1vni15go1_400.gif" alt="Avatar" id="gudetama">
+            </div>
+            <div class="col-md-4">
+                <h1>WANT BOOZE?</h1>
+            <div class="img-responsive">
+                <img src="https://media.giphy.com/media/p5kV3qZbNyWKk/giphy.gif" alt="Avatar" id="booze">
+            </div>
+            </div>
+            <div class="col-md-4">
+                <h1>LIKE MUSIC?</h1>
+                <img class="img-responsive" src="https://media1.tenor.com/images/d6b0271256104f1970ea0006e165a9fb/tenor.gif?itemid=4850366" alt="Avatar" id="music">
+            </div>
+        </div>    
+</div>
+
+
+<script>
+// form validation
+	$("#email, #password").on('keyup', function () {
+		var email = $('#email').val()
+		var password = $('#password').val()
+
+		if(email.length > 0 && validateEmail(email) && password.length > 0 ){
+			$("#signin").removeClass("disabled");
+			$("#signin").removeAttr('disabled');
+		}else{
+			$("#signin").addClass("disabled");
+			$("#signin").attr('disabled');
+		}
+	})
+
+//
+// check valid email address
+function validateEmail(str){
+  var regex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if(!regex .test(str)){
+    $("#email-msg").text("Please enter valid email.").css('color', 'red');
+    return false
+  }else{
+    $("#email-msg").text("");
+    return true
+  }
+}
+
+
+</script>
