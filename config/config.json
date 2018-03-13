@@ -1,10 +1,10 @@
 {
   "development": {
-    "username": "coiv1ftb1dh1lizn",
-    "password": "n74ic7b8zupa64mz",
-    "port": "3306",
-    "database": "at25ihc6mjjicn5f",
-    "host": "e764qqay0xlsc4cz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "root",
+    "password": "password",
+    "port": "3307",
+    "database": "bums_db",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
