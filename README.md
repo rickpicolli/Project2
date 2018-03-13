@@ -14,7 +14,7 @@ Please check out the launched app on Heroku [here](https://something.herokuapp.c
 
 If you prefer to run the application locally, clone this repository with the following command.
 
-	git clone https://github.com/khali094/BUM.git
+	git clone https://github.com/jackfang415/Project2.git
 	
 Next, install the application dependencies.
 
