@@ -93,7 +93,7 @@ function createButtons(i){
 
   var $next = $("<button>")
   $next.text("next").addClass("catBtn btn btn-primary resultBtn nextBtn")
-  if(i === 3){
+  if(i === 11){
     $next.addClass("hide");
   }else{
     $next.removeClass("hide");
