@@ -4,7 +4,7 @@
 
 B.U.M. is a Full Stack Application that allows the users to maximize their lazy day. It is a fun application for watch videos, listen musics and view some funny gifs all in the same place. Users can use their login and password to go to the main page and find all the entertainment they need in a bum day.
 
-Please check out the launched app on Heroku [here](https://something.herokuapp.com/)!
+Please check out the launched app on Heroku [here](https://mighty-peak-57852.herokuapp.com/)!
 
 ## Screenshot
 
